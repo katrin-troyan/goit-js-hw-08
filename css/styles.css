@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #212121;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1440px;
+  padding: 24px 156px;
+  margin: 0 auto;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.gallery-item {
+  width: calc((100% - 24px * 2) / 3);
+}
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+}
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+.basicLightbox__placeholder {
+  background-color: #2e2f42;
+}
